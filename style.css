@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*CABEÇALHO*/
+header{
+    background-color: #303030;
+    height: 250px;
+    color: #FFFFFF;
+    padding-top: 200px;
+    padding-left: 50px;   
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+header p{
+    margin-top: 20px;
+}
+
+/*SEÇÃO DADOS NUMERICOS*/
+.data-numbers{
+    background-color: #F9F9F9;
+    min-height: 200px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    font-size: 20px;
+    align-content: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 50px;
+    font-weight: 500;
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*SEÇÃO INFORMATIVA*/
+.container{
+    display: flex;
+    height: 680px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 50px;
+}
+.column{
+    display: grid;
+    align-content: center;
+    height: auto;
+    width: 40%;
+}
+.column img {
+    width: 100%; /* A imagem ocupa 100% da largura da coluna, que é 40% da seção */
+    height: auto;
+}
+#text{
+    text-align: left;
+    justify-self: stretch;
+    padding-left: 3vw;
+    margin-right: 8vw;
+    width: 60%;
+}
+.column h2{
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+}
+.column p{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/*FORMULARIO*/
+.form{
+    background-color: #303030;
+    height: auto;
+    text-align: center;
+    padding: 7vw;
+    font-family: 'Raleway', sans-serif;
+}
+#form-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+input{
+    width: 350px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 20px;
+    border: 0px;
+    border-radius: 8px;
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 15px;    
+}
+.btn{
+    background-color: #C07212;
+    width: 200px;
+    height: 53px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;   
+}
+.btn:hover{
+    background-color:#c26e07;
+    color: white;
+    transition-duration: 0.5s ;
+    box-shadow: 0px 5px 20px  #8B4513;
+    transform: translateY(-5px);   
+}
+input:focus {
+    outline: none;
+    border: 2px solid #C07212;
+}
+::placeholder{
+    color: #0000004D;
+    font-size: 20px;
+}
